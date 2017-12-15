@@ -1,6 +1,6 @@
 class Storage {
-    constructor() {
-        this.storage = localStorage
+    constructor(storage) {
+        this.storage = storage
     }
 
     getObject(key) {

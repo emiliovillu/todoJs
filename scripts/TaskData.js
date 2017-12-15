@@ -1,6 +1,6 @@
 class TaskData {
-    constructor() {
-        this.storage = new Storage
+    constructor(storage) {
+        this.storage = new Storage(storage)
     }
 
     create(text, done) {
@@ -53,7 +53,7 @@ class TaskData {
         const task = this._retrieve(id, tasks)
         
         if (task) {
-            task.done = true
+            task.done = done
 
             this.set(tasks)
         }

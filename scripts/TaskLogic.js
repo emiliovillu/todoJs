@@ -1,6 +1,6 @@
 class TaskLogic {
-  constructor() {
-    this.taskData = new TaskData
+  constructor(storage) {
+    this.taskData = new TaskData(storage)
   }
 
   addTask(text) {
@@ -29,5 +29,15 @@ class TaskLogic {
 
   removeAllTasks() {
     this.taskData.deleteAll()
+  }
+
+  hasTasksDone() {
+    const tasks = this.listAllTasks()
+
+    for (let i = 0; i < tasks.length; i++) {
+      if (tasks[i].done) return true
+    }
+
+    return false
   }
 }

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Todo JavaScript </title>
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+  <meta charset="UTF-8">
+  <title>Todo JavaScript </title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
+
 <body>
-  <Section class="wrapper"> 
+  <Section class="wrapper">
     <div class="border">
-      <form action="">
-        <h1>Todo App<h1>
-        <input type="text" id="text" placeholder="Add task" autofocus>
-        <button type="submit" id="add">Add</button>
-        <button id="removeAll">Remove all</button>
+      <form action="#">
+        <h1>Todo App
+          <h1>
+            <input type="text" id="text" placeholder="Add task" autofocus>
+            <button type="submit" id="add">Add</button>
+            <button id="removeAll">Remove all</button>
       </form>
-        <ul id="todo-list"></ul>
-        <h2>Completed Task</h2>
-        <ul id="completed"></ul>
+      <ul id="todo-list"></ul>
+      <h2 id="done-title">Completed Task</h2>
+      <ul id="done-list"></ul>
     </div>
   </Section>
-     <script type="text/javascript" src="scripts/Storage.js"></script>
-     <script type="text/javascript" src="scripts/TaskData.js"></script>
-     <script type="text/javascript" src="scripts/TaskLogic.js"></script>
-     <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/Storage.js"></script>
+  <script type="text/javascript" src="scripts/TaskData.js"></script>
+  <script type="text/javascript" src="scripts/TaskLogic.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
+
 </html>
