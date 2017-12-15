@@ -1,0 +1,16 @@
+{
+  "name": "todo-vanillajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o ./styles -w ./styles/main.scss"
+  },
+  "keywords": [],
+  "author": "Emilio Villuendas",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
