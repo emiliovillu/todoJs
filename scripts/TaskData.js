@@ -54,6 +54,7 @@ class TaskData {
         
         if (task) {
             task.done = done
+            task.text = text
 
             this.set(tasks)
         }
