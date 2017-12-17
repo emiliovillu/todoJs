@@ -43,7 +43,7 @@ this command will raise a server on http://localhost:8080.
 to stop the server press:
 
 ```
-crtl + c
+ctrl + c
 ```
 
 
