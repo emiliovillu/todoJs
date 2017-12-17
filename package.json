@@ -1,11 +1,12 @@
 {
   "name": "todo-vanillajs",
   "version": "1.0.0",
-  "description": "",
+  "description": "ToDo List",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o ./styles -w ./styles/main.scss"
+    "scss": "node-sass -o ./styles -w ./styles/main.scss",
+    "start": "http-server"
   },
   "keywords": [],
   "author": "Emilio Villuendas",

@@ -20,7 +20,7 @@ function test (title, unit) {
         const testItem = document.createElement('li')
         const testText = document.createTextNode(`Test "${title}" FAILED ${err.message}`)
         
-        testList.style.color = 'red'
+        testList.style.color = '#DE4119'
         
         
         testItem.appendChild(testText)
