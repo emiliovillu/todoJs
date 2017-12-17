@@ -9,3 +9,8 @@ function testAddTask () {
 }
 
 test('Successfully add of task', testAddTask)
+
+function testFail () {
+  assert(true === false, '"true = false"') 
+}
+test('Check that the failed test works', testFail)

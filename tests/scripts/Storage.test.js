@@ -7,7 +7,7 @@ function testStorageSetsObjectSuccessfullyInTargetStorage () {
     
     storage.setObject('helloworld', obj) 
 
-    const res = targetStorage.getItem('helloworld') + 1
+    const res = targetStorage.getItem('helloworld')
 
     assert(res == JSON.stringify(obj), 'recovered object from target storage must have the same content as the original object')
 }
