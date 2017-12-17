@@ -23,7 +23,7 @@ function testListTask () {
 
 test('Successfully list of task', testListTask)
 
-function testUpdateTask(){
+function testUpdateTask () {
   const taskData = new TaskData(storage)
 
   const task = taskData.create('buy milk', false)
@@ -35,7 +35,7 @@ function testUpdateTask(){
 
 test('Successfully update of task', testUpdateTask)
 
-function testDeleteTaskById(){
+function testDeleteTaskById () {
   const taskData = new TaskData(storage)
 
   const task = taskData.create('buy milk', false)

@@ -1,20 +1,20 @@
 const targetStorage = localStorage
 
-function testStorageSetsObjectSuccessfullyInTargetStorage() {
+function testStorageSetsObjectSuccessfullyInTargetStorage () {
     const storage = new Storage(targetStorage)
 
     const obj = { hello: 'world' }
     
-    storage.setObject('helloworld', obj)
+    storage.setObject('helloworld', obj) 
 
-    const res = targetStorage.getItem('helloworld')
+    const res = targetStorage.getItem('helloworld') 
 
     assert(res == JSON.stringify(obj), 'recovered object from target storage must have the same content as the original object')
 }
 
 test('Storage sets object successfully', testStorageSetsObjectSuccessfullyInTargetStorage)
 
-function testStorageGetsObjectSuccessfullyFromTargetStorage() {
+function testStorageGetsObjectSuccessfullyFromTargetStorage () {
     const storage = new Storage(targetStorage)
 
     const obj = { hello: 'world' }

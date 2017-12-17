@@ -7,7 +7,7 @@ const doneList = document.getElementById('done-list')
 const removeAllButton = document.getElementById('removeAll')
 const addButton = document.getElementById('add')
 
-function render() {
+const render = () => {
   const tasks = taskLogic.listAllTasks()
 
   todoList.innerHTML = ''
@@ -34,8 +34,7 @@ function render() {
 
       removeButton.addEventListener('click', () => {
         taskLogic.removeTask(task.id)
-        console.log(task.id)
-
+        
         render()
       })
 
@@ -74,7 +73,6 @@ function render() {
 
       removeButton.addEventListener('click', () => {
         taskLogic.removeTask(task.id)
-        console.log(task.id)
 
         render()
       })
